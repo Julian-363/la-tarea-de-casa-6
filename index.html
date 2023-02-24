@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi html</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h2 class="title-modal">Deje sus datos, nos contactaremos con usted</h2>
+        <form>
+          <label for="input-name">
+            <p class="description-input">Nombre</p>
+          </label>
+          <div class="position-input">
+            <input
+              class="input-modal"
+              type="text"
+              name=""
+              id="input-name"
+              placeholder="Ingresa su nombre aquí"
+              required
+            />
+            <svg class="persona-negra-svg">
+              <use href="./images/symbol-defs.svg#icon-persona-negra-1"></use>
+            </svg>
+          </div>
+          <label for="input-tel">
+            <p class="description-input">Teléfono</p>
+          </label>
+          <div class="position-input">
+            <input
+              class="input-modal"
+              type="tel"
+              name="tel"
+              id="input-tel"
+              placeholder="Ingresa su telefono aquí"
+              required
+            />
+            <svg class="persona-negra-svg">
+              <use href="./images/symbol-defs.svg#icon-telfono-negro-1"></use>
+            </svg>
+          </div>
+          <label for="input-imail">
+            <p class="description-input">E-mail</p>
+          </label>
+          <div class="position-input">
+            <input
+              class="input-modal"
+              type="email"
+              name="email"
+              id="input-imail"
+              placeholder="Ingresa su imail aquí"
+              required
+            />
+            <svg class="persona-negra-svg">
+              <use href="./images/symbol-defs.svg#icon-correo-electrnico-1"></use>
+            </svg>
+          </div>
+          <div>
+            <p class="description-input">Comentarios</p>
+            <textarea
+              class="textarea-modal"
+              name="Comentarios"
+              id="textarea"
+              cols="0"
+              rows="4"
+              placeholder="Introdusca el texto"
+            ></textarea>
+          </div>
+          <div class="checkbox-modal">
+            <label for="activar">
+              <input class="check-input" type="checkbox" id="activar" />
+              Estoy de acuerdo con el boletín informativo y acepto los Términos
+              y Condiciones
+            </label>
+          </div>
+          <div class="send-form">
+            <button class="button-enviar" type="submit">Enviar</button>
+          </div>
+        </form>
+        <div>
+          <svg class="close-modal">
+            <use
+              href="./images/symbol-defs.svg#icon-cerrar-1"
+              button
+              type="button"
+              data-modal-close
+            ></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <header class="list-header">
+      <!-- site nav -->
+      <div class="container list-header">
+        <nav class="site-nav">
+          <a class="logo-webstudios" href="index.html">WebStudios</a>
+          <ul class="list-nav">
+            <li>
+              <a class="nav active underlined" href="./index.html">Estudio</a>
+            </li>
+            <li><a class="nav" href="./portafolio.html">Portafolio</a></li>
+            <li><a class="nav" href="#">Contactos</a></li>
+          </ul>
+        </nav>
+        <ul class="list-info">
+          <li>
+            <a class="info" href="mailto:info@devstudio.com">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+                <use href="./images/symbol-defs.svg#icon-sobre-1"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="info" href="tel:+52-55-5529-6000">
+              <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg">
+                <use href="./images/symbol-defs.svg#icon-telefono-1"></use>
+              </svg>
+              +52-55-5529-6000
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- section title -->
+    <main>
+      <section class="title-background">
+        <h1 class="title">
+          SOLUCIONES EFICACES PARA <br />
+          SU NEGOCIO
+        </h1>
+        <button type="button" data-modal-open class="service-request">
+          Solicite nuestro servicios
+        </button>
+      </section>
+      <!-- previous requirements -->
+      <section class="container">
+        <ul class="task-description">
+          <li>
+            <div class="content-advantages">
+              <svg
+                class="backgroud-advantages"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="./images/symbol-defs.svg#icon-antena-1"></use>
+              </svg>
+            </div>
+            <h3 class="advantages">ATENCIÓN A LOS DETALLES</h3>
+            <p class="details-description">
+              Nos adentramos en todos los detalles y procesos de su negocio,
+              para así desarrollar una solución a su medida.
+            </p>
+          </li>
+          <li>
+            <div class="content-advantages">
+              <svg
+                class="backgroud-advantages"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="./images/symbol-defs.svg#icon-reloj-1"></use>
+              </svg>
+            </div>
+            <h3 class="advantages">PUNTUALIDAD</h3>
+            <p class="details-description">
+              Con nosotros, usted puede sentirse seguro y protegido. Un
+              principio importante de la empresa: respetar su tiempo y respetar
+              los plazos acordados.
+            </p>
+          </li>
+          <li>
+            <div class="content-advantages">
+              <svg
+                class="backgroud-advantages"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="./images/symbol-defs.svg#icon-diagrama-1"></use>
+              </svg>
+            </div>
+            <h3 class="advantages">PLANIFICACIÓN</h3>
+            <p class="details-description">
+              Usted podrá observar y participar en cada fase del desarrollo y
+              aplicación de soluciones.
+            </p>
+          </li>
+          <li>
+            <div class="content-advantages">
+              <svg
+                class="backgroud-advantages"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="./images/symbol-defs.svg#icon-astronauta-1"></use>
+              </svg>
+            </div>
+            <h3 class="advantages">TEGNOLOGÍA MODERNA</h3>
+            <p class="details-description">
+              Usamos herramientas innovadoras para resolver las tareas
+              asignadas. Es hora de simplificar los procesos laborales.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- profession -->
+      <section class="container">
+        <h2 class="sub-title">A qué nos dedicamos</h2>
+        <ul class="content-sub-title">
+          <li class="first-images">
+            <img
+              src="images/keyboard.jpg"
+              alt="imagen de teclado"
+              width="373"
+              height="323"
+            />
+            <div class="footer-de-images">APLICXACIONES DE ESCRITORIO</div>
+          </li>
+          <li class="first-images">
+            <img
+              src="images/phone.jpg"
+              alt="imagen de celular"
+              width="373"
+              height="323"
+            />
+            <div class="footer-de-images">APLICXACIONES MOVILES</div>
+          </li>
+          <li class="first-images">
+            <img
+              src="images/tablets.jpg"
+              alt="imagen de tablet"
+              width="373"
+              height="323"
+            />
+            <div class="footer-de-images">SOLUCIONES DE DISEÑO</div>
+          </li>
+        </ul>
+      </section>
+      <!-- teachers -->
+      <section class="work-team">
+        <div class="container cards-teachers">
+          <h2 class="sub-title">Nuestro Equipo</h2>
+          <ul class="team">
+            <li class="teachers">
+              <img
+                src="images/teacher1.jpg"
+                alt="chico con camisa vinotinto"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-teachers">Andrés Cubo</h3>
+              <p class="subtitles-p">Diseñador de Productos</p>
+              <ul class="content-redes">
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-0"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-1"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-2"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-3"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="teachers">
+              <img
+                src="images/teacher2.jpg"
+                alt="chica rubia"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-teachers">Carla Palacios</h3>
+              <p class="subtitles-p">Desarrolladora Frontend</p>
+              <ul class="content-redes">
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-0"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-1"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-2"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-3"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="teachers">
+              <img
+                src="images/teacher3.jpg"
+                alt="chico con camisa azul"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-teachers">Mario Dorado</h3>
+              <p class="subtitles-p">Marketing</p>
+              <ul class="content-redes">
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-0"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-1"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-2"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-3"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="teachers">
+              <img
+                src="images/teacher4.jpg"
+                alt="chico con camisa negra"
+                width="270"
+                height="260"
+              />
+              <h3 class="name-teachers">Pablo Mijangos</h3>
+              <p class="subtitles-p">Diseñador IU</p>
+              <ul class="content-redes">
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-0"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-1"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-2"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-3"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container">
+        <h2 class="sub-title-customers">Clientes Regulares</h2>
+        <div class="content-customers">
+          <div>
+            <svg class="customers" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/symbol-defs.svg#icon-cliente-1"></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="customers" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/symbol-defs.svg#icon-cliente-2"></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="customers" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/symbol-defs.svg#icon-cliente-3"></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="customers" xmlns="http://www.w3.org/2000/svg">
+              <use
+                class="logo"
+                href="./images/symbol-defs.svg#icon-cliente-4"
+              ></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="customers" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/symbol-defs.svg#icon-cliente-5"></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="customers" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/symbol-defs.svg#icon-cliente-6"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="background-footer">
+      <div class="container footer-info">
+        <h2><a class="logo-webstudios-footer" href="#">WebStudios</a></h2>
+        <!-- footer -->
+        <address>
+          <div class="content-footer">
+            <ul>
+              <li>
+                <a
+                  class="description"
+                  href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5093082,-99.1322997,16.51z/data=!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  >Calz. Ticomán 500, Ciudad de <br />
+                  éxico, CDMX, México.</a
+                >
+              </li>
+              <li>
+                <a class="description-info" href="malito:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="description-info" href="tel:+52-55-5529-6000"
+                  >+52-55-5529-6000</a
+                >
+              </li>
+            </ul>
+            <section>
+              <div class="encuentranos"><h3>ENCUENTRANOS EN</h3></div>
+              <ul class="content-redes">
+                <li>
+                  <svg
+                    class="redes-footer"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-0"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes-footer"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-1"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes-footer"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-2"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="redes-footer"
+                    href="#"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-elipse-3"></use>
+                  </svg>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </address>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
