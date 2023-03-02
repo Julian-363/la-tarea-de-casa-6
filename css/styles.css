@@ -354,8 +354,8 @@ button.service-request:hover {
   height: 50px;
   border-radius: 4px;
   border: none;
-  background-color: #2196F3;
-  color: #fff;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
   text-decoration: none;
   cursor: pointer;
 }
@@ -389,8 +389,6 @@ button.service-request:hover {
 .details-description {
   width: 270px;
   height: 75px;
-  left: 206px;
-  top: 945px;
   line-height: 1.7;
   color: (--color-gris);
 }
@@ -711,4 +709,41 @@ li.project-cards:hover {
 
 .redes-footer:hover {
   fill: var(--color-azul);
+}
+
+
+.content-suscribase {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boletin {
+  padding-bottom: 20px;
+}
+
+.btn {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--color-azul-oscuro);
+  padding-left: 16px;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+}
+
+.btn-suscribase {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-size: 16px;
 }
